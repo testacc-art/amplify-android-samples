@@ -26,17 +26,17 @@ jobs:
       run: |
           cd datastore-todo
           chmod +x gradlew
-          ./gradlew build
+          ./gradlew build --no-daemon
     - name: Build datastore-blog
       run: |
           cd datastore-blog
           chmod +x gradlew
-          ./gradlew build
+          ./gradlew build --no-daemon
 
     - name: Build auth-hostedui
       run: |
           cd auth-hostedui
           chmod +x gradlew
-          ./gradlew build
+          ./gradlew build --no-daemon
 
 
